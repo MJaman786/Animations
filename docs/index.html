@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head><title>Animation Showcase</title></head>
-  <body>
-    <h1>My Animations</h1>
-    <ul>
-      <li><a href="spin/">Spin Animation</a></li>
-    </ul>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Animation Showcase</title>
+  <style>
+    /* Reset and base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+      transition: background 0.3s ease;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      letter-spacing: 1.2px;
+      color: #bb86fc;
+      text-shadow: 0 0 8px #bb86fc80;
+    }
+
+    ul {
+      list-style: none;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    ul li {
+      background: #1f1f1f;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      box-shadow: 0 2px 6px rgba(187, 134, 252, 0.3);
+    }
+
+    ul li:hover {
+      background: #3700b3;
+      box-shadow: 0 4px 12px rgba(55, 0, 179, 0.6);
+    }
+
+    ul li a {
+      display: block;
+      padding: 1rem 1.5rem;
+      color: #bb86fc;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover,
+    ul li a:focus {
+      color: #fff;
+      outline: none;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+      ul {
+        max-width: 100%;
+      }
+      ul li a {
+        font-size: 1rem;
+        padding: 0.85rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>My Animations</h1>
+  <ul>
+    <li><a href="spin/" target="_blank">Spin Animation</a></li>
+  </ul>
+</body>
 </html>
